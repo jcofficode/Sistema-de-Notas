@@ -1,0 +1,406 @@
+
+
+/*Estilo para la página en general*/
+
+body {
+    margin: 0px;
+    padding: 0;
+    background-image: url(../img/bclogin.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 140%;
+    background-position-x: center;
+    background-clip: content-box;
+   
+}
+
+.body-login {
+    background-image: url(../img/login2.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 165%;
+    background-position-x: center;
+    background-clip: content-box;
+    width: 100%;
+}
+/*CSS del encabezado de Registrarse Y login */
+
+.img-section {
+    display: grid;
+    grid-template-columns: 2fr;
+    max-width: 350px;
+    background-color: rgb(11, 0, 140); background: linear-gradient(to bottom, #4e8af9, #4e60f9);
+    padding: 1px 30px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: auto;
+    /*box-shadow: 5px 5px 5px 5px rgba(8, 8, 8, 0.869);*/
+    gap: 15px;
+    margin: 100px auto 0px auto;
+    font-family:'Krub', sans-serif;
+  }
+
+  .img-login{
+    padding: 15px 30px 20px;
+  }
+
+.user-img{
+   
+    height: 46px;
+    text-align: center;
+    width: 100%;
+    /*border: 2px solid white;*/
+    padding: 0px 0px 5px 0px;
+
+  
+}
+
+
+.texto-img {
+   
+    margin: 0px 0px 0px 2px;
+    padding: 0px;
+    justify-content: center;
+    font-size: 20px;
+    font-weight:bolder;
+    text-shadow: 1px 0px 0px black;
+    color: white;
+    font-weight: bold;
+    width: auto;
+   
+}
+
+.titulo-off{
+    margin-left: 40px;
+}
+
+.titulo-secundario{
+    font-size: small;
+    margin-top: 10px;
+    font-weight:900;
+    margin-left: 100px;
+}
+
+.secundary{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-img img {
+  
+    width: 34px;
+    height: 35px;
+    /*border-radius: 70%;*/
+    margin-left: 12%;
+    border-radius: 10px;
+  }
+
+
+
+
+
+/* Estilos para el contenido principal del login */
+
+
+article{
+    max-width: 100%;
+    
+}
+
+
+
+
+
+article p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+
+label {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #2E4053;
+}
+
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: 10px;
+    color: #fffbfb;
+    height: 50px;
+    background-color: rgba(237, 129, 20, 0);
+   
+}
+
+input[type="password"] {
+    font-size: 1rem;
+    padding: 10px;
+    color: #fffbfb;
+    background-color: rgba(237, 129, 20, 0);
+    height: 50px;
+    
+
+}
+  
+
+input[type="email"] {
+    font-size: 1rem;
+    padding: 10px;
+    color: #fffbfb;
+    background-color: rgba(237, 129, 20, 0);
+    height: 50px;
+    
+
+}
+  
+  
+
+input[type="submit"] {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #014efa;
+    color: #FFFFFF;
+    cursor: pointer;
+    place-self: center;
+    
+    
+}
+
+
+
+
+
+
+
+
+/*Articulo para el register y login*/
+
+article{
+    margin: 0px 50px 0px 50px;
+}
+
+/*Seccion Principal */
+.main-section {
+    display: grid;
+    max-width: 350px;
+    background-color: rgba(255, 128, 0, 0.7); /* Naranja más fuerte con 80% de opacidad */
+
+    padding: 30px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-top: none;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0px auto 40px auto;
+    
+}
+
+.registroprincipal{
+    height: 530px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.form-group {
+    margin-bottom: 0;
+    position: relative;
+     text-align: center;
+    align-items: center;
+}
+
+.form-control {
+    padding: 10px;
+    
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fffbfb;
+    
+}
+
+.form-group {
+    margin-bottom: 24px;
+    padding-right: 10px;
+}
+
+.form-group input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    padding-left: 15px;
+    Font-size: 0.8rem;
+}
+
+.form-control::placeholder {
+    color: #5e5e5e;
+}
+
+.form-control:focus:required {
+    border-color: #02ffd0;
+    outline: 0 none;
+}
+
+.form-control:required:placeholder-shown {
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.form-control:required:not(:placeholder-shown):invalid {
+    border: none;
+    border-bottom: 1px solid ;
+    color: red;
+    
+}
+
+.form-control:required:not(:placeholder-shown):valid {
+    border: none;
+    border-bottom: 1px solid ;
+    color: #2fe678;
+    
+}
+
+.form-control:required:focus:invalid {
+    border: none;
+    border-bottom: 1px solid;
+    color: red;
+    
+}
+
+.form-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.btn-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+button.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #4e8af9, #4e60f9);
+    transition: all 0.3s ease;
+    color: #fffbfb;
+    height: 50px;
+}
+
+button.btn:hover {
+    transform: scale(1.1);
+    background-color: #2e6bf9; /* Color de fondo al pasar el cursor sobre el botón */
+    color: #ffffff;
+}
+
+.regis-btt{
+    width: 20px;
+    height: 20px;
+}
+
+#ingresar {
+    background-color: rgb(11, 0, 140);/*#FD1956*/;
+    color: white;
+}
+
+#registrar {
+    background-color: rgb(11, 0, 140)/*#6C757D*/;
+    color: white;
+    text-decoration: none;
+
+}
+#cambio {
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #4e8af9, #4e60f9);
+    transition: all 0.3s ease;
+    height: 20px;
+
+}
+#cambio:hover {
+     /* Tamaño de fuente al pasar el cursor sobre el botón */
+    transform: scale(1.1);
+    background-color: #2e6bf9; /* Color de fondo al pasar el cursor sobre el botón */
+    color: #ffffff;
+
+}
+
+#registrar:hover {
+    background-color: rgb(6, 0, 71);
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+.forgot a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #6C757D;
+}
+
+.message {
+    display: none;
+}
+
+.valid {
+    color: rgb(87, 216, 87);
+    display: block;
+}
+
+/*Modales para el login*/
+
+.editConfirmado{
+    background-image: linear-gradient(45deg, #008000, #ffff00, #0b0b0b);
+    border-color: #008000;
+}
+
+.errorConfirmado{
+    background-image: linear-gradient(45deg, #ef3131, #ff7b00, #b10000);
+    border-color: #b35508;
+    border-radius: 75px;
+}
+
+.errorRegister{
+    background-image: linear-gradient(45deg, #ae34eb, #d41fe5, #4a00b1);
+    border-color: #3808b3;
+    border-radius: 75px;
+}
+
+h3{
+    font-size: 0.8em;
+    color: antiquewhite;
+}
+
+.registrarsection{
+    margin-top: 10px;
+}

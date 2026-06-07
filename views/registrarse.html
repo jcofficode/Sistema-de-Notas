@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Registarse - Carga de Notas</title>
+</head>
+<body>
+    <article>
+        <div class="img-section registrarsection">
+         
+            <div class="user-img" id="div_registrar"> 
+             
+           
+                <h1 class="texto-img">Crea una Cuenta</h1>
+                <div class="secundary"> <h1 class="texto-img titulo-secundario">Sistema Carga de Notas </h1> <img src="../img/download-folder.gif" alt="transferencia-movil"/></div>
+               
+            </div>    
+                   
+                    
+             
+           
+        </div>
+            <div class="main-section registroprincipal">
+           
+                <form id="formRegistro" th:action="@{/login}" method="get">
+                
+             
+                    <div class="form-group">
+                    <input type="text" class="form-control" id="usuario" minlength="3" maxlength="20" placeholder="Nombre de Usuario" pattern="[a-zA-Z0-9]{3,20}" required />
+                  
+                    </div>
+                  <div class="grid"> 
+                    <div class="form-group">
+                    <input type="text" class="form-control" name="nombre" id="nombre" minlength="2" maxlength="10" placeholder="Nombre" pattern="[a-zA-Z]{2,10}" required />
+                    
+                 
+                    </div>
+
+                    <div class="form-group">
+                    <input type="text" class="form-control" name="apellido" id="apellido" minlength="2" maxlength="15" placeholder="Apellido" pattern="[a-zA-Z]{2,15}" required />
+                 
+                 
+                    </div>
+                
+                    <div class="form-group">
+                    <input pattern="[0-9]{1,13}" type="text" class="form-control" name="numero" id="numero" minlength="11" maxlength="13" placeholder="Teléfono" required />
+               
+                 
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="numero" id="cedula" pattern="[0-9]{4,8}" title="Por favor ingrese un número de cédula válido de entre 4 y 8 dígitos" placeholder="Nº Cédula" required>
+
+                    </div>
+
+                                    
+                 
+                  </div>
+
+                  
+                  <div class="form-group">
+                    <input class="form-control" type="email" id="correo" name="correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Correo electrónico" required>
+                    </div>  
+
+
+                  <div class="form-group">
+                    <input class="form-control" type="password" name="clave" id="clave" placeholder="Contraseña" minlength="8" maxlength="14" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                    </div>
+
+                  <div class="btn-group">
+                      <button type="submit" class="btn" id="registrarse" value="true">
+                         Registrarse <img src="../img/register.png" alt="" srcset="" class="regis-btt">
+                      </button>
+
+                      <a href="IngresarLogin.html" class="btn" id="cambio" value="inicio">
+                        <i class="fa fa-sign-in-alt"></i> ¿Ya posee una cuenta?
+                      </a>
+                  </div>
+                </form>
+                <div class="forgot">
+                 
+                    <a href="#" style="color: aliceblue; font-size: 1rem; ">La contraseña debe cumplir los siguientes requisitos:</a>
+                
+                    <h3 class="requisito"> Al menos 8 caracteres</h3>    
+                    <h3 class="requisito"> Al menos una letra minúscula y una mayúscula</h3>
+                  
+                    <h3 class="requisito">Al menos un número y un carácter especial</h3>
+               
+                    
+                </div>
+  
+            </div>         
+    </article>
+
+    <dialog id="editConfirmado_JC" class="editConfirmado">
+        <h1>Registro exitoso</h1>
+        <img src="../img/verificado.gif" alt="" style="border-radius: 75px;" width="200" height="180">
+    </dialog>
+    
+    <dialog id="errorCampos_JC" class="errorConfirmado">
+        <h1>Rellene todos los campos</h1>
+        <img src="../img/alert.gif" alt="" style="margin-left: 20%; border-radius: 75px;" width="200" height="180">
+    </dialog>
+
+    <dialog id="registerror_JC" class="errorRegister">
+        <h1>Usted ya está Registrado(a)</h1>
+        <img src="../img/wanted.gif" alt="" style="margin-left: 20%; border-radius: 75px;" width="200" height="180">
+    </dialog>
+</main>
+</body>
+<script src="../js/dist/loginOff.js" type="Module"></script>
+</html>

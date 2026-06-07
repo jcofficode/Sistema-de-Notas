@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/vision.css">
+    <script src="https://kit.fontawesome.com/fe0dc59af9.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/ojo.png" type="image/x-icon">
+    <title>Visión del Proyecto- TJC</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="menu">
+         <div class="logo">
+             <a href="#" class="img-principal"><img src="../img/sombrero.png" >TECNOLÓGICO JEAN COFFI</a>
+             <a href="#" class="btn-menu" id="btn-menu"><i class=" icono fa fa-bars" aria-hidden="true"></i></a> 
+         </div>
+     
+         <div class="enlaces" id="enlaces">
+             <a href="../index.html" title="Cargue las notas de las materias"><i class="fa-solid fa-clipboard" ></i> Carga de Notas</a>
+             <a href="vision.html" title="Descripción del proyecto"> <img src="../img/ojo.png" alt=""  aria-hidden="true"> Visión del Proyecto</a>
+           
+             
+             <button
+          aria-label="Cerrar Sesion"
+          type="submit"
+          class="cerrarVision"
+          id="cerrarvision"
+          title="Cierre de Sesión del Usuario"
+        >
+         
+          <i class="fa-solid fa-right-from-bracket fa-rotate-180"></i>
+        </button>
+         </div>
+        </nav> 
+        </header><br><br><br><br>
+        <section>
+        <article><h1>SISTEMA DE CARGA DE NOTAS DEL TECNOLÓGICO JEAN COFFI</h1>
+        <p>Este sistema está diseñado para la carga de notas por parte de los profesores que imparten clases a los alumnos de un hipotético instituto tecnológico, en el cual ofrecen cuatro (04) carreras universitarias, cada una de las cuales consta de cuatro (04) semestre donde se dictan tres (03) materias.</p>
+        <img src="../img/proyecto_img1.jpg" alt="" class="img1-proyecto">
+        <p>Para poder realizar la carga de las notas, los profesores deben registrarse en el sistema, incluyendo el nombre de usuario, nombre, apellido, teléfono, correo electrónico y la contraseña. </p><br>
+        <img src="../img/proyecto_img2.jpg.png" alt="" class="img2-proyecto"><br><br>
+        <p>Una vez registrado en el sistema, el profesor puede acceder al mismo iniciando la sesión, para ello se solicita el nombre de usuario y la contraseña.</p><br>
+        <img src="../img/proyecto_img3.jpg.png" alt="" class="img3-proyecto"><br><br>
+        <p>Cuando el profesor haya iniciado una sesión, podrá escoger la materia a la cual cargará las notas. El sistema mostrará el listado de todas las materias que se imparten en la institución.</p><br><br>
+        <img src="../img/proyecto_img4.jpg.png" alt=""><br><br>
+        <p>Cuando es elegida la materia aparecerá la información de los alumnos, específicamente Nombre, Apellido, Cédula de identidad, Carrera, Materia y Semestre, además de cuatro campos correspondiente a las notas a cargar de las evaluaciones realizadas, y dos campos complementarios donde se indica, una vez guardada las notas, la nota promedio y nota final de cada estudiante. Esta última no es más que la nota promedio redondeada.</p><br><br>
+        <img src="../img/proyecto_img5.jpg.png" alt=""><br><br>
+        <p>Las notas a cargar van de 0 a 20, el sistema acepta decimales, siendo la nota promedio el acumulado de notas entre 4 (número de evaluaciones) y la nota final se corresponde al redondeo de la nota promedio. </p><br><br>
+        <img src="../img/proyecto_img6.jpg" alt="" class="img6-proyecto"><br><br>
+        <p>Limitaciones:</p>
+        <ul><li>	El sistema no valida el hecho de que una vez que un profesor se registra por primera para una materia, no pueda volver a hacerlo en dicha materia. </li>
+        </ul>
+    </article>
+    </section>
+    <footer>  <span>
+        Profesor <strong>Ronald Palacios</strong> | Curso:
+        Programación Básica con JavaScript &copy;<span id="actual"></span><br>Proyecto:Técnicas
+        <img src="../img/hacker.png" alt="">|Alumno: <strong> Jean Coffi</strong>
+          </span>
+          <script>
+              let actual = (document.getElementById("actual").innerHTML =
+                  new Date().getFullYear());
+          </script></footer>
+        <dialog id="sesionCerradaVision" class="cerradasesion">
+            <h1>Cerrando Sesión</h1>
+            <img src="../img/left-arrow.gif" alt="" style="margin-left: 5%; border-radius: 75px;" width="200" height="180">
+        </dialog>
+        
+</body>
+<script src="../js/js_Menu/headroom.min.js"></script>
+<script src="../js/js_Menu/jquery.min.js"></script> 
+<script src="../js/js_Menu/menu.js"></script>
+<script src="../js/dist/main.js" type="Module"></script>
+</html>

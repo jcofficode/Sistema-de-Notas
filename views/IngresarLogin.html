@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../img/login.png" type="image/x-icon">
+    <title>Iniciar Sesion-TJC</title>
+</head>
+<body class="body-login">
+    <main>
+    <article>
+        <div class="img-section img-login">
+       
+           
+           
+                <h1 class="texto-img titulo-off">Iniciar Sesión-Carga de notas</h1>
+                <div class="user-img"> 
+                    <article class="dinero">
+                  
+                    <img src="../img/login.png" alt="">
+                </article>
+       
+            </div>
+        </div>
+            <div class="main-section">
+
+            <form id="formIngreso" th:action="@{/login}" method="get">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usuario" minlength="3" maxlength="20" placeholder="Nombre de Usuario" pattern="[a-zA-Z0-9]{3,20}" required />
+                  
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" type="password" name="clave" id="clave" placeholder="Contraseña" minlength="8" maxlength="14" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                </div>
+                  <!--  <label id="caja" for="password">Contraseña </label>-->
+                 
+                
+                <div class="btn-group">
+                    <button type="submit" class="btn" id="iniciar">
+                         Ingresar <img src="../img/inicio.png" alt="" srcset="">
+                    </button>
+
+                    <a href="registrarse.html" class="btn" id="cambio" value="Registrarse">
+                    <i class="fa fa-sign-in-alt"></i> Registrarse
+                    </a>
+                </div>
+            </form>
+            <div class="forgot">
+                <a href="#" style="color: aliceblue; font-size: 1rem; ">¿Ha olvidado su contraseña?</a>
+            </div>
+
+  
+        </div>
+    </article>
+
+    <dialog id="errorCampos_JC" class="errorConfirmado">
+        <h1>Rellene todos los campos</h1>
+        <img src="../img/alert.gif" alt="" style="margin-left: 20%; border-radius: 75px;" width="200" height="180">
+    </dialog>
+
+    <dialog id="errorDatos_JC" class="errorConfirmado">
+        <h1>Los datos no coinciden</h1>
+        <img src="../img/wanted.gif" alt="" style="margin-left: 20%; border-radius: 75px;" width="200" height="180">
+    </dialog>
+
+
+
+</main>
+</body>
+<script src="../js/dist/loginOff.js" type="Module"></script>
+</html>
